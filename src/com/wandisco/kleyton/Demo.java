@@ -130,19 +130,19 @@ public class Demo extends JFrame {
 						// positive values only
 						if(value <= 0)
 							throw new IllegalArgumentException();
+						
+						if(sphere.isSelected()) {
+							shape = ShapeFactory.getShape("sphere", value);
+						} else if (cube.isSelected()) {
+							shape = ShapeFactory.getShape("cube", value);
+						} else if (tetrahedron.isSelected()) {
+							shape = ShapeFactory.getShape("tetrahedron", value);					
+						}
 
-						} catch (IllegalArgumentException ex) {
+					} catch (IllegalArgumentException ex) {
 						JOptionPane.showMessageDialog(null, "Not a valid entry.\nPositive numbers only.", 
 								"Alert", JOptionPane.WARNING_MESSAGE);
-					}
-	
-					if(sphere.isSelected()) {
-						shape = ShapeFactory.getShape("sphere", value);
-					} else if (cube.isSelected()) {
-						shape = ShapeFactory.getShape("cube", value);
-					} else if (tetrahedron.isSelected()) {
-						shape = ShapeFactory.getShape("tetrahedron", value);					
-					}
+					}	
 	
 					// response field
 					if(shape != null) {
@@ -168,7 +168,7 @@ public class Demo extends JFrame {
 			});
 			panel.add(close);
 			
-		JLabel author = new JLabel("Kleyton O'Hare");
+		JLabel author = new JLabel("by Kleyton O'Hare");
 			author.setFont(new Font("Arial", Font.PLAIN, 12));
 			author.setBounds(30, 250, 100, 20);
 			panel.add(author);

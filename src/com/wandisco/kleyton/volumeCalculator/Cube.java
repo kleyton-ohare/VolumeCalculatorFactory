@@ -41,7 +41,7 @@ public class Cube implements Shape {
 	
 	@Override
 	public String toString() {
-		return "A cube of width " + width + " has volume " + getVolume(); 
+		return "A cube of width " + width + " has volume " + (int) getVolume(); 
 	}
 	
 }
