@@ -1,4 +1,4 @@
-package com.wandisco.kleyton.volumeCalculator;
+package com.kleyton.volumeCalculator;
 
 /**
  * Provides an interface for concrete classes instantiation.

@@ -1,4 +1,4 @@
-package com.wandisco.kleyton;
+package com.kleyton;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -19,8 +19,8 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.UIManager;
 
-import com.wandisco.kleyton.volumeCalculator.Shape;
-import com.wandisco.kleyton.volumeCalculator.ShapeFactory;
+import com.kleyton.volumeCalculator.Shape;
+import com.kleyton.volumeCalculator.ShapeFactory;
 
 /**
  * GUI demonstration using AWT (Abstract Window Toolkit).

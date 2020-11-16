@@ -1,8 +1,11 @@
-package com.wandisco.kleyton.volumeCalculator;
+package com.kleyton.volumeCalculator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import com.kleyton.volumeCalculator.Shape;
+import com.kleyton.volumeCalculator.ShapeFactory;
 
 /**
  * Ensure there are no logic errors when calculating values for different subtypes of

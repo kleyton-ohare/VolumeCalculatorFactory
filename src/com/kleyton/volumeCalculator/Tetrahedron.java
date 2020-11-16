@@ -1,4 +1,4 @@
-package com.wandisco.kleyton.volumeCalculator;
+package com.kleyton.volumeCalculator;
 
 /**
  * A regular Tetrahedron blueprint. <br>
